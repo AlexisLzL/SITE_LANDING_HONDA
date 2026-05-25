@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . '/../includes/data.php';
 require_once __DIR__ . '/../includes/header.php';
-?>
 $moto_seleccionada = isset($_GET['moto']) ? $_GET['moto'] : '';
 ?>
 
