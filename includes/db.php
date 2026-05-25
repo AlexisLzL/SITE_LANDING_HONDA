@@ -4,7 +4,10 @@ class Database {
 
     public function __construct() {
         try {
-            $dbPath = __DIR__ . '/database.sqlite';
+            // Vercel tiene un sistema de archivos de solo lectura, por lo que debemos usar /tmp
+            $isVercel = getenv('VERCEL') || isset($_ENV['VERCEL']);
+            $dbPath = $isVercel ? '/tmp/database.sqlite' : __DIR__ . '/database.sqlite';
+            
             $this->pdo = new PDO('sqlite:' . $dbPath);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->createTable();
