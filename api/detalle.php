@@ -1,5 +1,5 @@
 <?php 
-require_once 'includes/data.php';
+require_once __DIR__ . '/../includes/data.php';
 
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $moto = null;
@@ -16,7 +16,7 @@ if (!$moto) {
     exit;
 }
 
-include 'includes/header.php'; 
+require_once __DIR__ . '/../includes/header.php'; 
 ?>
 
 <section class="container">
@@ -54,4 +54,6 @@ include 'includes/header.php';
     </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
+<?php
+require_once __DIR__ . '/../includes/footer.php';
+?>

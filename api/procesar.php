@@ -1,5 +1,7 @@
 <?php
-require_once 'includes/db.php';
+require_once __DIR__ . '/../includes/db.php';
+// ... resto del código
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validación básica
@@ -44,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    include 'includes/header.php';
+    require_once __DIR__ . '/../includes/header.php';
     ?>
     <section class="container">
         <div class="form-container" style="text-align: center;">
@@ -85,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </section>
     <?php
-    include 'includes/footer.php';
+    require_once __DIR__ . '/../includes/footer.php';
 } else {
     header('Location: registro.php');
 }

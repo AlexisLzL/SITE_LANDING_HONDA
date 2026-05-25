@@ -1,6 +1,6 @@
-<?php 
-require_once 'includes/data.php';
-include 'includes/header.php'; 
+<?php
+require_once __DIR__ . '/../includes/data.php';
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <section class="container">
@@ -28,4 +28,6 @@ include 'includes/header.php';
     </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
+<?php
+require_once __DIR__ . '/../includes/footer.php';
+?>

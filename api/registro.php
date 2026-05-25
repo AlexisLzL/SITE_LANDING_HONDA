@@ -1,7 +1,7 @@
-<?php 
-require_once 'includes/data.php';
-include 'includes/header.php'; 
-
+<?php
+require_once __DIR__ . '/../includes/data.php';
+require_once __DIR__ . '/../includes/header.php';
+?>
 $moto_seleccionada = isset($_GET['moto']) ? $_GET['moto'] : '';
 ?>
 
@@ -46,4 +46,6 @@ $moto_seleccionada = isset($_GET['moto']) ? $_GET['moto'] : '';
     </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
+<?php
+require_once __DIR__ . '/../includes/footer.php';
+?>
