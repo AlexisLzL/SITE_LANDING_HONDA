@@ -11,14 +11,14 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.php">
+                <a href="/index.php">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda_Logo.svg" alt="Honda Logo" width="120">
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="motos.php">Modelos</a></li>
-                <li><a href="registro.php">Inscripción</a></li>
+                <li><a href="/index.php">Inicio</a></li>
+                <li><a href="/motos.php">Modelos</a></li>
+                <li><a href="/registro.php">Inscripción</a></li>
             </ul>
             <div class="menu-herramientas">
                 <button class="dropbtn"><i class="fas fa-tools"></i> Herramientas</button>

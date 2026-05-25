@@ -8,9 +8,9 @@
             <div class="footer-section">
                 <h3>Enlaces</h3>
                 <ul>
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="motos.php">Modelos</a></li>
-                    <li><a href="registro.php">Inscripción</a></li>
+                    <li><a href="/index.php">Inicio</a></li>
+                    <li><a href="/motos.php">Modelos</a></li>
+                    <li><a href="/registro.php">Inscripción</a></li>
                 </ul>
             </div>
             <div class="footer-section">
